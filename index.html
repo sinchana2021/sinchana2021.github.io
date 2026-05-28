@@ -76,18 +76,6 @@ layoffHeatmap(data, {width: 900})
 </script>
 </head>
 <body>
-<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
-<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
-<nav id="observablehq-sidebar">
-  <ol>
-    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Hello Framework</a></li>
-  </ol>
-  <ol>
-    <li class="observablehq-link observablehq-link-active"><a href="./tech-layoffs">Tech Layoffs 2020–2025</a></li>
-  </ol>
-</nav>
-<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
 <div id="observablehq-center">
 <aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
 <nav>
@@ -99,7 +87,7 @@ layoffHeatmap(data, {width: 900})
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:0ab87dcc:--></div>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2026-05-28T16:22:07">May 28, 2026</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2026-05-28T16:26:11">May 28, 2026</a>.</div>
 </footer>
 </div>
 </body>
